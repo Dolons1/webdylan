@@ -1,0 +1,77 @@
+/* Importar fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+body {
+    background-color: #D7A7E5; /* Color de fondo morado bebé */
+    color: white;
+    font-family: 'Roboto', 'Lato', sans-serif; /* Fuentes Roboto o Lato */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Evitar el desbordamiento */
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 90%; /* Reducción del tamaño para ajustarse mejor */
+    max-width: 800px; /* Limita el ancho máximo */
+    text-align: justify; /* Justificar el texto en toda la carta */
+    font-size: 1.2em; /* Tamaño de texto uniforme para todo el texto */
+    line-height: 1.6; /* Mejor separación entre líneas */
+    overflow-y: auto; /* Permite el desplazamiento si es necesario */
+    max-height: 90vh; /* Máxima altura que ocupa el contenedor */
+}
+
+.container h1,
+.container h2,
+.container h3,
+.container p,
+.container .styled-link {
+    font-size: 1.2em; /* Tamaño uniforme para todos los textos */
+    margin-bottom: 20px;
+    line-height: 1.6; /* Mejor separación entre líneas */
+}
+
+.gif_container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.gif_container img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+.styled-link {
+    font-family: 'Roboto', 'Lato', monospace; /* Fuentes Roboto o Lato */
+    font-style: italic;
+    text-decoration: none;
+    color: #6cc9ee;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.styled-link:hover {
+    color: #FFD700;
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
+    transform: scale(1.1);
+}
+
+.styled-link::before,
+.styled-link::after {
+    font-size: 100px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.styled-link:hover::before,
+.styled-link:hover::after {
+    transform: translateX(5px);
+}

@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #2C3E50;
+  font-family: 'Arial', sans-serif;
+  flex-direction: column;
+  font-size: 1.5em; /* Tamaño de letra consistente para todo el texto */
+}
+
+.container {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-size: 1.5em; /* Tamaño de letra consistente para los encabezados */
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.yes-button, .no-button {
+  font-size: 1.5em; /* Tamaño de letra consistente para los botones */
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.yes-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.no-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.gif_container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}

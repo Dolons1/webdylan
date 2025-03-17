@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            max-width: 900px; /* Aumentamos el tamaño del contenedor */
+            width: 100%;
+            padding: 30px; /* Aumentamos el padding */
+            text-align: center; /* Centrado del texto y los botones */
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo ligeramente oscuro */
+            border-radius: 20px; /* Borde más redondeado */
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); /* Sombra más fuerte */
+            border: 3px solid #fff; /* Borde blanco más grueso */
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .yes-button, .no-button {
+            padding: 12px 25px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+
+        .yes-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .no-button {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .yes-button:hover, .no-button:hover {
+            opacity: 0.8;
+        }
+
+        .gif_container {
+            margin-top: 30px;
+        }
+
+        .gif_container img {
+            max-width: 100%; /* GIF al 100% del ancho del contenedor */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Estilo para h1 y h2 - Justificados */
+        h1, h2 {
+            font-size: 1.5em;
+            color: #ffffff;
+            margin: 10px 0 20px 0; /* Espacio entre párrafos */
+            text-align: justify; /* Justificado para h1 y h2 */
+        }
+
+        /* Estilo para h3 - Centrado y más espacio */
+        h3 {
+            font-size: 1.5em;
+            color: #ffffff;
+            margin: 40px 0; /* Aumentamos el espacio a 40px para más separación */
+            text-align: center; /* Centrado para h3 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feliz Cumpleaños!!! Espero estes teniendo un dia maravilloso.</h1> 
+        <h2>Del otro lado hay unas palabras las cuales me gustaria que leyeras. Sin embargo, tienes que estar de acuerdo con darme una respuesta.</h2>
+        <h3>¿Aceptas?</h3>
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Sí</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
+        </div>
+        <div class="gif_container">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
